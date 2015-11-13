@@ -7,16 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid body">
     <%= render "common/navbar" %>
     <%= notice_message %>
     
     <div class="row">
-      <div class="col-md-2">
-        <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-          <li> <%= link_to("Products", admin_products_path) %> </li>
-          <li> <%= link_to("Users", admin_users_path) %> </li>
-        </ul>
+      <div class="col-md-2 removeDefaultPadding">
+        <%= render "common/admin_menu" %>
       </div>
       <div class="col-md-10">
         <%= yield %>

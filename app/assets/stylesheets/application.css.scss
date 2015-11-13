@@ -25,3 +25,311 @@
 	font-weight: bold;
 	color: #ff007c;
 }
+
+/* line 1, ../sass/_common.sass */
+body {
+  background-color: white;
+}
+
+/* line 3, ../sass/_common.sass */
+table.table thead tr.primary th {
+  background-color: #5697d0;
+  color: white;
+}
+
+/* line 7, ../sass/_common.sass */
+::selection {
+  background: #94da94;
+}
+
+/* line 10, ../sass/_common.sass */
+.row {
+  margin: 0;
+}
+
+/* line 15, ../sass/_common.sass */
+.middleAlign {
+  vertical-align: middle !important;
+}
+
+/* line 18, ../sass/_common.sass */
+.rotateArrow {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+/* line 1, ../sass/_navbar.sass */
+.navbar-default {
+  background-color: #4bb777;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0;
+}
+/* line 6, ../sass/_navbar.sass */
+.navbar-default img {
+  padding-top: 8px;
+}
+/* line 8, ../sass/_navbar.sass */
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: white;
+}
+/* line 11, ../sass/_navbar.sass */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #f1f1f1;
+}
+
+/* line 14, ../sass/_navbar.sass */
+.navbar-default .dropdown li a {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+/* line 17, ../sass/_navbar.sass */
+.navbar-default .glyphicon {
+  padding: 9.6px;
+  margin-right: 4px;
+  margin-left: 4px;
+  background-color: white;
+  color: #4bb777;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+}
+/* line 24, ../sass/_navbar.sass */
+.navbar-default a:hover, .navbar-default a:focus {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_footer.sass */
+.footer {
+  height: 60px;
+  line-height: 60px;
+  background-color: #4bb777;
+  color: white;
+  font-size: 15px;
+}
+
+/* line 1, ../sass/_body.sass */
+.body {
+  background-color: white;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+}
+
+/* line 1, ../sass/_menu.sass */
+.menuBtn {
+  color: white;
+}
+/* line 4, ../sass/_menu.sass */
+.menuBtn a {
+  padding: 13px 0 !important;
+  color: #4bb777;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 9, ../sass/_menu.sass */
+.menuBtn .lightLine {
+  border-top: 1px solid #79ce9c;
+  border-right: 1px solid #79ce9c;
+}
+/* line 12, ../sass/_menu.sass */
+.menuBtn a:hover {
+  background-color: #79ce9c !important;
+  color: white;
+}
+/* line 15, ../sass/_menu.sass */
+.menuBtn a:focus {
+  background-color: #79ce9c !important;
+  color: white;
+}
+/* line 18, ../sass/_menu.sass */
+.menuBtn span {
+  padding: 0 0px 0 20px;
+}
+
+/* line 20, ../sass/_menu.sass */
+.searchIcon {
+  position: relative;
+  top: -25px;
+  float: right;
+  padding-right: 10px;
+  color: black;
+  font-size: 10pt;
+}
+
+/* line 28, ../sass/_menu.sass */
+.removeDefaultPadding {
+  padding: 0;
+}
+
+/* line 31, ../sass/_menu.sass */
+li > form {
+  padding: 40px 20px;
+}
+
+/* line 35, ../sass/_menu.sass */
+.navbar-side ul {
+  border-bottom: 1px solid #79ce9c;
+}
+
+/* line 38, ../sass/_menu.sass */
+.dropdownMenu {
+  background-color: #efefef;
+  margin: 0 2px;
+}
+/* line 42, ../sass/_menu.sass */
+.dropdownMenu a {
+  color: #002545;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 45, ../sass/_menu.sass */
+.dropdownMenu a:focus {
+  background-color: transparent !important;
+}
+
+/* line 48, ../sass/_menu.sass */
+.menu {
+  font-size: 12pt;
+}
+
+/* line 1, ../sass/_content.sass */
+.content {
+  padding: 10px !important;
+  background-color: white;
+  min-height: 900px;
+}
+
+/* line 1, ../sass/_dropdownMenu.sass */
+.headerMenu {
+  margin-top: 5px !important;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/* line 1, ../sass/_login.sass */
+body.login {
+  background: black url(../img/bg.jpg) center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 微軟正黑體;
+}
+/* line 5, ../sass/_login.sass */
+body.login table.table thead tr.primary th {
+  background-color: #5697d0;
+  color: white;
+}
+/* line 8, ../sass/_login.sass */
+body.login ::selection {
+  background: #17711e;
+  color: white;
+}
+/* line 12, ../sass/_login.sass */
+body.login .row {
+  margin: 0;
+}
+/* line 17, ../sass/_login.sass */
+body.login .application {
+  padding: 20px;
+  color: white;
+  line-height: 30px;
+}
+/* line 22, ../sass/_login.sass */
+body.login .about {
+  color: white;
+}
+/* line 24, ../sass/_login.sass */
+body.login .about a {
+  text-decoration: none;
+  color: white;
+}
+/* line 27, ../sass/_login.sass */
+body.login .about table {
+  background-color: transparent;
+}
+/* line 29, ../sass/_login.sass */
+body.login .about table tbody td {
+  border-top: 0;
+  padding: 7px 8px 0 8px;
+}
+/* line 33, ../sass/_login.sass */
+body.login .blackBg {
+  background: rgba(50, 50, 50, 0.5);
+}
+/* line 35, ../sass/_login.sass */
+body.login .loginContent {
+  display: inline-block;
+  margin-top: 40%;
+}
+/* line 38, ../sass/_login.sass */
+body.login .loginContent table {
+  background-color: transparent;
+}
+/* line 41, ../sass/_login.sass */
+body.login .loginContent table tbody td {
+  border-top: 0;
+  padding: 0 20px 0 20px;
+}
+/* line 44, ../sass/_login.sass */
+body.login .loginContent table tbody td input {
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+/* line 47, ../sass/_login.sass */
+body.login .loginContent table tbody td input.code {
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 0;
+}
+/* line 51, ../sass/_login.sass */
+body.login .loginContent table tbody td .loginBtn {
+  padding: 26px;
+}
+/* line 53, ../sass/_login.sass */
+body.login .footer {
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.4);
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+/* line 62, ../sass/_login.sass */
+body.login .header {
+  padding: 50px 30px 30px 30px;
+}
+
+/* line 1, ../sass/_formControl.sass */
+.miniForm {
+  width: 10%;
+}
+
+/* line 3, ../sass/_formControl.sass */
+.smallForm {
+  width: 20%;
+}
+
+/* line 6, ../sass/_formControl.sass */
+.form-inline {
+  display: inline-block;
+}
