@@ -1,0 +1,23 @@
+<h2> Edit Customer </h2>
+<hr>
+<%= simple_form_for [:admin, @customer] do |f| %>
+  
+  <div class="group">
+    <%= f.input :name %>
+  </div>
+  <div class="group">
+    <%= f.input :uniform_numbers %>
+  </div>
+  <div class="group">
+    <%= f.input :phone %>
+  </div>
+  <div class="group">
+    <%= f.input :email %>
+  </div>
+  <div class="group">
+    <%= f.input :address %>
+  </div>
+  <div class="text-center">
+  <%= f.submit "Submit", data: { disable_with: "Submitting..." }, :class => "btn btn-default" %>
+  </div>
+<% end %>
