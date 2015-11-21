@@ -4,16 +4,31 @@
       <ul class='nav'>
         <li class="menuBtn"> 
           <%= link_to(admin_products_path, class: "lightLine") do %>
-            <span class='glyphicon glyphicon-bell'></span>
+            <span class='fa fa-cubes'></span>
+            &emsp;
             Product
           <% end %>
         </li>
         <li class="menuBtn">
-          <%= link_to(admin_users_path, class: "lightLine") do %>
-            <span class='glyphicon glyphicon-bell'></span>
-            Users
+          <%= link_to(admin_customers_path, class: "lightLine") do %>
+            <span class='fa fa-users'></span>
+            &emsp;
+            Customer
           <% end %> 
         </li>
+        <li class='menuBtn'>
+            <a class='lightLine' data-liName='arrow2' data-parent='#accordion' data-toggle='collapse' href='#collapseTwo'>
+              <span class='fa fa-wrench'></span>
+              &emsp;
+              System
+              <div class='caret rotateArrow'></div>
+            </a>
+        </li>
+          <ul class='nav collapse dropdownMenu' id='collapseTwo'>
+            <li>
+              <%= link_to "》 Users", admin_users_path %>
+            </li>
+          </ul>
       </ul>
     </div>
   </div>

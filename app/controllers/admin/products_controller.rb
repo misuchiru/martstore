@@ -38,6 +38,11 @@ class Admin::ProductsController < ApplicationController
 		end
 	end
 
+	def show
+		@product = Product.find(params[:id])
+		@photo = @product.photo
+	end
+
 	private
 
 	def product_params

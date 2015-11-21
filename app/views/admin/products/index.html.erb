@@ -1,6 +1,6 @@
 <h2> Product List </h2>
 <div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("新增產品", new_admin_product_path, class: "btn btn-primary btn-sm") %>
+  <%= link_to("New Product", new_admin_product_path, class: "btn btn-primary btn-sm") %>
 </div>
 <table class="table table-bordered">
   <thead>
@@ -19,7 +19,7 @@
           <%= product.id %>
         </td>
         <td>
-          <%= link_to product_path(product) do %>
+          <%= link_to admin_product_path(product) do %>
             <% if product.photo.present? %>
               <%= image_tag(product.photo.image.thumb.url, class: "thumbnail") %>
             <% else %>
@@ -34,7 +34,7 @@
           <%= product.price %>
         </td>
         <td>
-          <%= link_to("Edit", edit_admin_product_path(product)) %>
+          <%= link_to("Edit", edit_admin_product_path(product), class: "btn btn-warning btn-sm") %>
         </td>
       </tr>
     <% end %>

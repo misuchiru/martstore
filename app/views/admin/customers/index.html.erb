@@ -1,0 +1,44 @@
+<h2> Customer List </h2>
+<div class="pull-right" style="padding-bottom: 20px;">
+  <%= link_to("New Customer", new_admin_customer_path, class: "btn btn-primary btn-sm") %>
+</div>
+<table class="table table-bordered">
+  <thead>
+    <tr class="success">
+      <th>#</th>
+      <th>Name</th>
+      <th>Uniform Numbers</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td>
+          <%= customer.id %>
+        </td>
+        <td>
+          <%= link_to customer.name, admin_customer_path(customer) %>
+        </td>
+        <td>
+          <%= customer.uniform_numbers %>
+        </td>
+        <td>
+          <%= customer.address %>
+        </td>
+        <td>
+          <%= customer.phone %>
+        </td>
+        <td>
+          <%= customer.email %>
+        </td>
+        <td>
+          <%= link_to("Edit", edit_admin_customer_path(customer), class: "btn btn-warning btn-sm") %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

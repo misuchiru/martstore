@@ -1,0 +1,22 @@
+<h2> Customer Info </h2>
+<hr>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th class="info">Name</th>
+      <td><%= @customer.name %></td>
+      <th class="info">Uniform Number</th>
+      <td><%= @customer.uniform_numbers %></td>
+    </tr>
+    <tr>
+      <th class="info">Phone</th>
+      <td><%= @customer.phone %></td>
+      <th class="info">Email</th>
+      <td><%= @customer.email %></td>
+    </tr>
+    <tr>
+      <th class="info">Address</th>
+      <td colspan="3"><%= @customer.address %></td>
+    </tr>
+  </tbody>
+</table>
