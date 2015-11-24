@@ -3,4 +3,6 @@ class Order < ActiveRecord::Base
 
 	has_many :items, clsss_name: "OrderItem", dependent: :destroy
 	has_one :info, clsss_name: "OrderInfo", dependent: :destroy
+
+	accepts_nested_attributes_for :info
 end
